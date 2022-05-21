@@ -13,21 +13,20 @@ var products = ['Underpants:6.99', 'Socks:5.99', 'T-shirt:14.99', 'Trousers:31.9
 // number 2
 for (var i = 0; i < products.length; i++ ){
 
-    var prod[i] = products[i].slice(0, products[i].indexOf(':'));
-    var price[i] = products[i].slice(products[i].indexOf(':') + 1);
+  var prod = products[i].slice(0, products[i].indexOf(':'));
+  var price = products[i].slice(products[i].indexOf(':') + 1);
     
-}
   // number 3
-
+  price = number(price);
   // number 4
-
+  total += price;
   // number 5
-  let itemText = 0;
+  let itemText = prod + "-" + price;
 
   const listItem = document.createElement('li');
   listItem.textContent = itemText;
   list.appendChild(listItem);
-
+}
 // number 6
 
 totalBox.textContent = 'Total: $' + total.toFixed(2);
