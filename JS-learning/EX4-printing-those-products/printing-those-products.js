@@ -13,11 +13,12 @@ var products = ['Underpants:6.99', 'Socks:5.99', 'T-shirt:14.99', 'Trousers:31.9
 // number 2
 for (var i = 0; i < products.length; i++ ){
 
-  var prod = products[i].slice(0, products[i].indexOf(':'));
-  var price = products[i].slice(products[i].indexOf(':') + 1);
-    
+  var subProd = products[i].split(':');
+  var prod = subProd[0];
+  
+
   // number 3
-  price = number(price);
+  price = number(subProd[1]);
   // number 4
   total += price;
   // number 5
