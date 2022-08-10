@@ -10,7 +10,7 @@ for (var i = 1; i <= 5; i++){
   var newImage = document.createElement('img');
   newImage.setAttribute('src', nameImg);
   thumbBar.appendChild(newImage);
-  newImage.onclick = function(nameImg){
+  newImage.onclick = function(){
   displayedImage.setAttribute('src', nameImg);
   }
 }
