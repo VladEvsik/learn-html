@@ -10,5 +10,8 @@ for (var i = 1; i <= 5; i++){
   var newImage = document.createElement('img');
   newImage.setAttribute('src', nameImg);
   thumbBar.appendChild(newImage);
+  newImage.onclick = function(nameImg){
+  displayedImage.setAttribute('src', nameImg);
+  }
 }
 /* Wiring up the Darken/Lighten button */
