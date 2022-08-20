@@ -11,7 +11,7 @@ for (var i = 1; i <= 5; i++){
   newImage.setAttribute('src', nameImg);
   thumbBar.appendChild(newImage);
   newImage.onclick = function(){
-  displayedImage.setAttribute('src', nameImg);
+  newImage.addEventListener('click', e => displayedImage.src = e.target.src)
   }
 }
 /* Wiring up the Darken/Lighten button */
