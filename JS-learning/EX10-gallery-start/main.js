@@ -15,16 +15,14 @@ for (var i = 1; i <= 5; i++){
 
 btn.addEventListener('click', () => {
   var btnClass = btn.getAttribute('class');
-  if (btnClass = 'dark') {
+  if (btnClass === 'dark') {
     btn.setAttribute('class', 'light');
     btn.textContent = 'light';
-    overlay.style.backgroundColor = rgba (0,0,0,0.5);
-  }
-  else if (btnClass = 'light'){
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  } else {
     btn.setAttribute('class', 'dark');
     btn.textContent = 'dark';
-    overlay.style.backgroundColor = rgba (0,0,0,0);
+    overlay.style.backgroundColor = 'rgba(0,0,0,0)';
   }
-}
-)
+})
 /* Wiring up the Darken/Lighten button */
