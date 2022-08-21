@@ -14,15 +14,15 @@ for (var i = 1; i <= 5; i++){
 }
 
 btn.onclik = function(){
-  if (btn.target.class = "dark") {
-    btn.setAttribute('class', light);
-    btn.textContent = light;
+  if (btn.getAttribute('class') = 'dark') {
+    btn.setAttribute('class', 'light');
+    btn.textContent = 'light';
     overlay.style.backgroundColor = rgba (0,0,0,0.5);
   }
-  else if (btn.target.class = "light"){
-    btn.setAttribute('class', dark);
-    btn.textContent = dark;
-    overlay.style.backgroundColor = rgba (0,0,0,0.0);
+  else if (btn.getAttribute('class') = 'light'){
+    btn.setAttribute('class', 'dark');
+    btn.textContent = 'dark';
+    overlay.style.backgroundColor = rgba (0,0,0,0);
   }
 }
 
