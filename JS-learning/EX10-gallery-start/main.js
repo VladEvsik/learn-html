@@ -13,7 +13,7 @@ for (var i = 1; i <= 5; i++){
   newImage.addEventListener('click', e => displayedImage.src = e.target.src);
 }
 
-btn.onclik = function(){
+btn.addEventListener('click', () => {
   var btnClass = btn.getAttribute('class');
   if (btnClass = 'dark') {
     btn.setAttribute('class', 'light');
@@ -26,5 +26,5 @@ btn.onclik = function(){
     overlay.style.backgroundColor = rgba (0,0,0,0);
   }
 }
-
+)
 /* Wiring up the Darken/Lighten button */
